@@ -2,15 +2,15 @@
 In this project we clean Nashville Housing data in SQL server
 
 ## Table of Contents
-- [Project Overview](project-overview)
-- [Data Source](data-source)
-- [Tools](tools)
-- [Data Cleaning Tasks](data-cleaning-tasks)
-- [Data Analysis ](data-analysis)
-- [Results](results)
-- [Recommendation ](recommendation)
-- [Limitations](limitations)
-- [References](references)
+- [Project Overview](#project-overview)
+- [Data Source](#data-source)
+- [Tools](#tools)
+- [Data Cleaning Tasks](#data-cleaning-tasks)
+- [Data Analysis ](#data-analysis)
+- [Results](#results)
+- [Recommendation ](#recommendation)
+- [Limitations](#limitations)
+- [References](#references)
 
 
 ## Project Overview
