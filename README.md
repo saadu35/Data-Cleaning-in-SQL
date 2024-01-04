@@ -1,5 +1,5 @@
 # Data-Cleaning-in-SQL
-In this project we clean Nashville Housing data in SQL server
+In this project I clean Nashville Housing data in SQL server
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -25,8 +25,8 @@ The primary dataset used for this analysis is the " Nashville Housing Data for D
 
 ### Data Cleaning Tasks
 
-In the data preparation, we performed the following tasks: 
-1. Standardize Date Format: The initial task involves standardizing the date format in the SaleDate column to ensure consistency across the dataset. The CONVERT function is used to achieve this, followed by altering the column type to DATE.
+In the data preparation, I performed the following tasks: 
+1. Standardize Date Format: The initial task involves standardizing the date format in the SaleDate column to ensure consistency across the dataset. The CONVERT function is used to achieve this, folloId by altering the column type to DATE.
    
 2. Populate Property Address Data: Incomplete property addresses are populated by leveraging information from records with the same ParcelID. This process enhances the dataset by filling in missing property address details.
 
@@ -213,13 +213,13 @@ DROP COLUMN SaleDate
 The Nashville Housing dataset underwent comprehensive cleaning to address various data quality issues.
 - Date formats in the SaleDate column were standardized for consistency using the CONVERT function, and the column type was altered to DATE.
   
-- Missing property addresses were populated by merging data from records with the same ParcelID, enhancing the completeness of the dataset.
+- Missing property addresses are populated by merging data from records with the same ParcelID, enhancing the completeness of the dataset.
   
 - The PropertyAddress column was split into individual columns (PropertySplitAddress and PropertySplitCity) for more granular analysis.
   
 - Binary indicators in the SoldAsVacant field were modified to 'YES' for 'Y' and 'NO' for 'N' to improve readability and ensure consistency.
   
-- Duplicate records were identified based on specific columns, and only unique entries were retained, eliminating redundancy in the dataset.
+- Duplicate records Ire identified based on specific columns, and only unique entries Ire retained, eliminating redundancy in the dataset.
   
 - Unnecessary columns, including OwnerAddress, TaxDistrict, and SaleDate, were removed to streamline the dataset.
   
@@ -227,9 +227,9 @@ The Nashville Housing dataset underwent comprehensive cleaning to address variou
 
 
 ### Recommendation 
-Based on the data cleaning, we recommend the following:
+Based on the data cleaning, I recommend the following:
 
-1. Automate Data Cleaning Processes: Implement automation tools or scripts to streamline repetitive data cleaning tasks. Automation reduces manual errors, ensures consistency, and allows for efficient processing of large datasets. Tools like Python with pandas or Apache Spark can be beneficial for automating data cleaning procedures.
+1. Automate Data Cleaning Processes: Implement automation tools or scripts to streamline repetitive data cleaning tasks. Automation reduces manual errors, ensures consistency, and allows for efficient processing of large datasets. Tools like Python with pandas or Apache Spark can be beneficial for automating data-cleaning procedures.
 
 2. Implement Robust Data Validation: Introduce thorough data validation checks to verify the accuracy of the cleaning processes. Validate the cleaned dataset against external sources or known benchmarks to ensure that data quality is maintained throughout the cleaning pipeline.
 
@@ -237,7 +237,7 @@ Based on the data cleaning, we recommend the following:
 
 ### Limitations
 
-I undertook a comprehensive cleaning of the Nashville Housing dataset, addressing diverse data quality issues. This involved standardizing date formats by converting the SaleDate column to DATE for consistency. I filled missing property addresses by merging data based on ParcelID, significantly enhancing dataset completeness. To facilitate more detailed analysis, I split the PropertyAddress column into individual columns—PropertySplitAddress and PropertySplitCity. I transformed binary indicators in the SoldAsVacant field to 'YES' for 'Y' and 'NO' for 'N,' aiming to improve readability and consistency. I meticulously identified duplicate records based on specific columns, ensuring that only unique entries remained in the dataset. I systematically removed unnecessary columns such as OwnerAddress, TaxDistrict, and SaleDate, streamlining the dataset for clarity. The resulting cleaned dataset, now stored in the NashvilleHousing table, is standardized and complete, poised for my further exploratory data analysis and insights into the Nashville housing market.
+I undertook a comprehensive cleaning of the Nashville Housing dataset, addressing diverse data quality issues. This involved standardizing date formats by converting the SaleDate column to DATE for consistency. I filled in missing property addresses by merging data based on ParcelID, significantly enhancing dataset completeness. To facilitate more detailed analysis, I split the PropertyAddress column into individual columns—PropertySplitAddress and PropertySplitCity. I transformed binary indicators in the SoldAsVacant field to 'YES' for 'Y' and 'NO' for 'N,' aiming to improve readability and consistency. I meticulously identified duplicate records based on specific columns, ensuring that only unique entries remained in the dataset. I systematically removed unnecessary columns such as OwnerAddress, TaxDistrict, and SaleDate, streamlining the dataset for clarity. The resulting cleaned dataset, now stored in the Nashville Housing table, is standardized and complete, poised for my further exploratory data analysis and insights into the Nashville housing market.
 
 ### References 
 - SQL Server Documentation [View here](https://docs.microsoft.com/en-us/sql/)
